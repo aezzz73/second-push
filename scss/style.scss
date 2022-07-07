@@ -1,0 +1,49 @@
+@import "./constants.scss";
+@import "./reset.scss";
+@import "./mixins.scss";
+
+.header{
+    background-color: $bg_color;
+    color: $text_color;
+
+    &_nav{
+        width: 87%;
+        margin: {
+            left: auto;
+            right: auto;
+        }  
+        @include justify_content(space-between);
+
+        padding-top: $normal_paddng;
+        padding-bottom: $normal_paddng;
+
+        &_logo{
+            font-size: 30px;
+        }
+
+        &_navbar{
+            @include justify-content(space-around);
+            
+            width: 50%;
+
+            &_item{
+                padding-top: 15px;
+
+                a{
+                    color: $text_color;
+                    transition: 0.3s all linear;
+
+                    &:hover{
+                        color: tomato;
+                    }
+                }
+            }
+        }
+    }
+}  
+
+// From scss
+
+/*
+   From css
+*/
